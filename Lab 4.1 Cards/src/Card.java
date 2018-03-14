@@ -8,4 +8,19 @@ public class Card {
 		this.suit = suit;
 		this.value = value;
 	}
+	public String getRank() {
+		return rank;
+	}
+	public String getSuit() {
+		return suit;
+	}
+	public int getValue() {
+		return value;
+	}
+	public boolean equals(Card otherCard) {
+		return false;
+	}
+	public String toString() {
+		return "Rank: " + rank + "\nSuit: " + suit + "\nValue: " + value;
+	}
 }
