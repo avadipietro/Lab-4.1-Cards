@@ -19,7 +19,20 @@ public class Deck {
 		return unDealt.size();
 	}
 	public Card deal() {
-		unDealt[i];
-		unDealt.remove(unDealt.size() - 1);
+		if (unDealt.size() == 0) {
+			Card card = unDealt.get(unDealt.size() - 1);
+			dealt.add(card);
+			unDealt.remove(unDealt.size() - 1); //try replacing with card
+			return card;
+		}
+		return null;
+	}
+	public void shuffle() {
+		
+	}
+	public void swap(int x, int y) {
+		Card c = unDealt.get(0);
+		unDealt.set(0, c);
+		unDealt.set(index, element);
 	}
 }
