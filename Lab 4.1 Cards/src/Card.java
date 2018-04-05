@@ -21,6 +21,10 @@ public class Card {
 		return false;
 	}
 	public String toString() {
-		return "Rank: " + rank + "\nSuit: " + suit + "\nValue: " + value;
+		String v = "  - ";
+		if (value >= 10) {
+			v = " - ";
+		}
+		return "value " + value + v + rank + " of " + suit;
 	}
 }
