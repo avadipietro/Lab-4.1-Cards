@@ -1,8 +1,10 @@
-
+//Ava DiPietro 4/5/18
 public class Card {
+	
 	private String rank;
 	private String suit;
 	private int value;
+	
 	public Card(String rank, String suit, int value) {
 		this.rank = rank;
 		this.suit = suit;
